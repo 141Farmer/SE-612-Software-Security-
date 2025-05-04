@@ -1,0 +1,4 @@
+python3 -m http.server 8000
+
+<script src="http://localhost:8000/Task-7.js"></script>
+
