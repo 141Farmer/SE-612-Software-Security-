@@ -1,0 +1,10 @@
+$stmt = $conn->prepare("SELECT name, local, gender
+
+FROM USER_TABLE
+WHERE id = ? and password = ? ");
+
+// Bind parameters to the query
+$stmt->bind_param("is", $id, $pwd);
+$stmt->execute();
+$stmt->bind_result($bind_name, $bind_local, $bind_gender);
+$stmt->fetch();

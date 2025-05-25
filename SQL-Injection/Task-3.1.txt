@@ -1,0 +1,1 @@
+NewNickname', salary='999999' WHERE name='Alice' -- 
